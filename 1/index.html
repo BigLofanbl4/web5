@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Личная</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    p {
+      font-size: 20px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    input, textarea {
+      width: 100%;
+      font-size: 20px;
+      padding: 5px;
+    }
+    .form {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    .form__textarea {
+      margin-bottom: 20px;
+    }
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .form__buttons {
+      color: #fff;
+      background: #000;
+      padding: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <form action="mailto:vladislav-plugatyrev2012@yandex.ru" method="post" name="profile" class="form">
+    <p>Имя</p>
+    <input type="text" name="firstName" placeholder="Имя" required>
+    <p>Фамилия</p>
+    <input type="text" name="secondName" placeholder="Фамилия" required>
+    <p>Адрес</p>
+    <input type="text" name="adress" placeholder="Адрес" required>
+    <p>Интересы</p>
+    <input type="text" name="hobbies" placeholder="Ваши интересы">
+    <p>Username</p>
+    <input type="text" name="username" placeholder="Логин" required>
+    <p>Password</p>
+    <input type="password" name="password" placeholder="Пароль" required>
+    <p>Дата рождения</p>
+    <input type="date" name="birthday" required>
+    <p>Комментарии</p>
+    <textarea name="comments" rows="4" class="form__textarea"></textarea>
+    <div class="buttons">
+      <input type="submit" class="form__buttons">
+      <input type="reset" value="Очистить" class="form__buttons">
+    </div>
+  </form>
+</body>
+</html>

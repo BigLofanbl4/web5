@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Опрос:  Рынок сбыта сигарет</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    h3 {
+      font-weight: normal;
+    }
+    .survey {
+      margin-bottom: 30px;
+    }
+    .survey__buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .survey__buttons input {
+      padding: 10px;
+      background: #86dde0;
+    }
+    .btn-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 90px;
+      background: #ff3c00;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Опрос: Рынок сбыта сигарет</h1>
+  <form action="mailto:vladislav-plugatyrev2012@yandex.ru" method="post" class="survey">
+    <h3>1. Ваш возраст:</h3>
+    <select  name="age">
+      <option value="18-25">18-25 лет</option>
+      <option value="26-35">26-35 лет</option>
+      <option value="36-50">36-50 лет</option>
+      <option value="51+">51 и старше</option>
+    </select>
+
+    <h3>2. Как часто вы покупаете сигареты?</h3>
+    <select name="frequency">
+      <option value="every day">Ежедневно</option>
+      <option value="few times a week">Несколько раз в неделю</option>
+      <option value="weekly">Раз в неделю</option>
+      <option value="rarely">Редко</option>
+    </select>
+
+    <h3>3. Какой бренд сигарет вы предпочитаете?</h3>
+    <select name="cigarette_brand">
+      <option value="Marlboro">Marlboro</option>
+      <option value="Camel">Camel</option>
+      <option value="Winston">Winston</option>
+      <option value="Other">Другой</option>
+    </select>
+
+    <h3>4. Что для вас является основным критерием при выборе сигарет?</h3>
+    <select name="cigarette_criteria">
+      <option value="price">Цена</option>
+      <option value="taste">Вкус</option>
+      <option value="brand image">Имидж бренда</option>
+      <option value="other">Другое</option>
+    </select>
+
+    <div class="survey__buttons">
+      <input type="submit">
+      <input type="reset" value="Очистить">
+    </div>
+  </form>
+  <a href="2.html" class="btn-link">Дальше</a>
+</body>
+</html>

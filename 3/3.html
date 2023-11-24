@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Опрос:  Рынок сбыта сигарет</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    h3 {
+      font-weight: normal;
+    }
+    .survey {
+      margin-bottom: 30px;
+    }
+    .survey__buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .survey__buttons input {
+      padding: 10px;
+      background: #86dde0;
+    }
+    .btn-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 90px;
+      background: #ff3c00;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Опрос: Рынок сбыта сигарет</h1>
+  <form action="mailto:vladislav-plugatyrev2012@yandex.ru" method="post" class="survey">
+    <h3>Выберите несколько утверждений</h3>
+    <input type="checkbox" name="cigarette_concentration">
+    <span>Сигареты повышают концентрацию </span>
+    <br>
+    <input type="checkbox" name="cigarette_harm">
+    <span>Сигареты серьезно вредят здоровью </span>
+    <br>
+    <input type="checkbox" name="cigarette_cancer">
+    <span>Сигареты могут вызвать рак </span>
+    <br>
+    <input type="checkbox" name="cigarette_stress">
+    <span>Сигареты помогают бороться со стрессом </span>
+    <br>
+    <h3>Ваше отношение к сигаретам</h3>
+    <textarea name="comment" cols="50" rows="5" placeholder="Ваше сообщение"></textarea>
+    <div class="survey__buttons">
+      <input type="submit">
+      <input type="reset" value="Очистить">
+    </div>
+  </form>
+  <a href="4.html" class="btn-link">Дальше</a>
+</body>
+</html>

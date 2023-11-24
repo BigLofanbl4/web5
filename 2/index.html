@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Зачетная книжка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .gradebook {
+      padding: 20px;
+      background-color: rgb(228, 151, 151);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .gradebook__student {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+    .grades {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      justify-content: space-between;
+    }
+    .grades__grade {
+      display: flex;
+      gap: 10px;
+    }
+    .gradebook__buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .gradebook__buttons input {
+      width: 100%;
+      padding: 10px 0;
+    }
+    .subject__name {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="mailto:vladislav-plugatyrev2012@yandex.ru" method="post" name="grades" class="gradebook">
+    <p>Имя студента</p>
+    <input class="gradebook__student" type="text" name="name" placeholder="Имя">
+    <div class="subject">
+      <p class="subject__name">Математический анализ</p>
+      <div class="grades">
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Отлично</p>
+        </div>
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Хорошо</p>
+        </div>
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Удовлетворительно</p>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <p class="subject__name">Информационные технологии</p>
+      <div class="grades">
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Отлично</p>
+        </div>
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Хорошо</p>
+        </div>
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Удовлетворительно</p>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <p class="subject__name">Физика</p>
+      <div class="grades">
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Отлично</p>
+        </div>
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Хорошо</p>
+        </div>
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Удовлетворительно</p>
+        </div>
+      </div>
+    </div>
+    <div class="subject">
+      <p class="subject__name">Академический английский</p>
+      <div class="grades">
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Отлично</p>
+        </div>
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Хорошо</p>
+        </div>
+        <div class="grades__grade">
+          <input type="radio" name="gradeMath">
+          <p>Удовлетворительно</p>
+        </div>
+      </div>
+    </div>
+    <div class="gradebook__buttons">
+      <input type="submit">
+      <input type="reset" value="Очистить">
+    </div>
+  </form>
+</body>
+</html>

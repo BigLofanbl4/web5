@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Опрос:  Рынок сбыта сигарет</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    h3 {
+      font-weight: normal;
+    }
+    .survey {
+      margin-bottom: 30px;
+    }
+    .survey__buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .survey__buttons input {
+      padding: 10px;
+      background: #86dde0;
+    }
+    .btn-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 90px;
+      background: #ff3c00;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Опрос: Рынок сбыта сигарет</h1>
+  <form action="mailto:vladislav-plugatyrev2012@yandex.ru" method="post" class="survey">
+    <h3>1. Считаете ли вы, что употребление сигарет помогает снять стресс:</h3>
+    <input type="radio" name="cigarette_health" value="yes"> <span>Да</span>
+    <input type="radio" name="cigarette_health" value="no"> <span>Нет</span>
+
+    <h3>2. Считаете ли вы сигареты полезными для здоровья?</h3>
+    <input type="radio" name="cigarette_health" value="yes"> <span>Да</span>
+    <input type="radio" name="cigarette_health" value="no"> <span>Нет</span>
+    
+    <h3>3. Как вы считаете, влияют ли сигареты на окружающую среду?</h3>
+    <input type="radio" name="cigarette_environment" value="yes"> <span>Да</span>
+    <input type="radio" name="cigarette_environment" value="no"> <span>Нет</span>
+    
+    <h3>4. Считаете ли вы, что употребление сигарет вредно для окружающих?</h3>
+    <input type="radio" name="cigarette_harm" value="yes"> <span>Да</span>
+    <input type="radio" name="cigarette_harm" value="no"> <span>Нет</span>
+
+    <div class="survey__buttons">
+      <input type="submit">
+      <input type="reset" value="Очистить">
+    </div>
+  </form>
+  <a href="3.html" class="btn-link">Дальше</a>
+</body>
+</html>
